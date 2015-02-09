@@ -13,10 +13,10 @@
 <body>
     <h3>CS Student Random Picker</h3>
     <div></div>
-    <input type="button" onclick="chooseOne('cmp237')" value="CMP237"/>
-    <input type="button" onclick="chooseOne('cmp344')" value="CMP344"/>
-    <input type="button" onClick="chooseOne('cmp341')" value="CMP341"/>
-    <input type="button" onclick="chooseOne('cmp112')" value="CMP112"/>
+    <input type="button" onclick="chooseOne('Die1')" value="Die1"/>
+    <input type="button" onclick="chooseOne('Die2')" value="Die2"/>
+    <input type="button" onClick="chooseOne('Die3')" value="Die3"/>
+    <input type="button" onclick="chooseOne('Die4')" value="Die4"/>
     <script>
     // Brian Capouch, ready to retire the old hat
     // Choose a random student from a given class	
@@ -25,7 +25,7 @@
     // Note: It's an array of objects, each of which is a map
     //		and the value for each map is an array of names
 
-    var courses = { "cmp237": ['Craig Austgen','Daniel Davis','Benjamin Davisson','William Decker','Zachary Dickinson','Katie Harold','Eric Heinzman','Phillip Hofer','Troy Key','Andrew Klump','Kyle Lowtharp','Collin Mullis','Gabriel Perez','Ryan Postma','Kevin Regner','Andrew Ribicki','Connor Ring','Nathan Samano','Griffin Scott','Jared Smith'], "cmp112": ['Thaddeus Albert','Dan Amador','Bruce Anderson','Zachary Aring','Benjamin Davisson','Jace Horner','Carl Jones','Kyle Lowtharp','Declan McCarron','Collin Mullis','Yemi Ogunbameru','Andrew Ribicki','Christian Sexton','Houston Shimala','Ryan Slipher','Jared Smith','Ashlee Troop'], "cmp344": ['Craig Austgen','Daniel Davis','Dylan Gainey','Lucas Grube','Eric Heinzman','Katelyn Herre','Phillip Hofer','Andrew Klump','Ryan Postma','Nathan Samano','Danilo Zekovic'], "cmp341": ['Craig Austgen','Lucas Grube','Eric Heinzman','Phillip Hofer','Nathan Samano','Danilo Zekovic']}
+    var courses = { "Die1": ['1','2','3','4','5','6'], "Die2": ['1','2','3','4','5','6'], "Die3": ['1','2','3','4','5','6'], "Die4": ['1','2','3','4','5','6']}
  
 
     function chooseOne(course) {
