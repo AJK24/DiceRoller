@@ -15,6 +15,8 @@ This is designed to click on a button and essentially roll a dice.
     <div></div>
     <input type="button" onclick="chooseOne('Die1')" value="Die1"/>
     <input type="button" onclick="chooseOne('Die2')" value="Die2"/>
+    <input type='button' onclick="chooseBoth('Both')" value="Both"/>
+
     <input type="button" onClick="chooseOne('Die3')" value="Die3"/>
     <input type="button" onclick="chooseOne('Die4')" value="Die4"/>
     <script>
@@ -27,6 +29,11 @@ This is designed to click on a button and essentially roll a dice.
 
     var courses = { "Die1": ['1','2','3','4','5','6'], "Die2": ['1','2','3','4','5','6'], "Die3": ['1','2','3','4','5','6'], "Die4": ['1','2','3','4','5','6']}
  
+    function chooseBoth(){
+	$('#output').empty();
+	chooseOne('Die1');
+	chooseOne('Die2');
+    }
 
     function chooseOne(course) {
 
@@ -44,7 +51,7 @@ This is designed to click on a button and essentially roll a dice.
 
       // Clear out the div, and then fill it with fresh
       // This is the wonderful, invisible work of jQuery
-      $('#output').empty(); 
+   //   $('#output').empty(); 
       $('#output').append('<pre>' + result + '</pre>');
       }
   </script>
